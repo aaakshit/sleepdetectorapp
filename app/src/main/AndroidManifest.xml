@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.sleepdetectorapp">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Sleep Detector"
+        android:logo="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label"
+        android:requestLegacyExternalStorage="true">
+
+        <activity
+            android:name=".activity.newmaps"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_key" />
+
+        <activity android:name=".activity.StartingActivity" />
+        <activity android:name=".activity.NavBar_Activity" />
+        <activity android:name=".fragment.AboutFragment" />
+        <activity android:name=".fragment.HomeFragment" />
+        <activity android:name=".fragment.FactsFragment" />
+        <activity
+            android:name=".activity.LaunchActivity"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:logo="@mipmap/ic_launcher_round"
+            android:resizeableActivity="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:screenOrientation="nosensor"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+            android:icon="@mipmap/ic_launcher"
+            android:logo="@mipmap/ic_launcher_round"
+            android:resizeableActivity="true"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:screenOrientation="fullSensor"
+            android:supportsPictureInPicture="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+    </application>
+
+</manifest>

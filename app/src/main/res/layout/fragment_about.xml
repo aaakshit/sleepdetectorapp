@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/about_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_background"
+    tools:context=".fragment.AboutFragment">
+
+
+    <ImageButton
+        android:id="@+id/hamburgerImageButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/navigation_drawer"
+        android:src="@drawable/ic_hamburger_black" />
+    <TextView
+        android:id="@+id/text_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="#0B2C4D"
+        android:textSize="15sp"
+        android:text=" Road accidents do not happen they are caused, and one of them is drivers not paying enough attention. Many a times while driving on highways and freeways the drive makes drivers drowsy.
+In order to prevent this Faille Winter will detect when the driver is becoming drowsy and rings an alarm to make the driver attentive again. This is a small step we came up with to reduce road accidents."
+        android:layout_below="@+id/hamburgerImageButton"
+        android:layout_marginTop="420dp"/>
+
+</RelativeLayout>
+</ScrollView>

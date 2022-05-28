@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="map_key" translatable="false">
+        AIzaSyBlmaI7pydp12lRMMcQECmEC65_e84jEnU
+    </string>
+    <item name="map_key" type="id" />
+</resources>

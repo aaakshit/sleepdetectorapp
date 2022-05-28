@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/facts_background"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/facts_background"
+    tools:context=".fragment.FactsFragment">
+
+    <TextView
+        android:id="@+id/factsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#80ABD6"
+        android:text="Facts"
+        android:fontFamily="@font/sacramento"
+        android:textSize="60dp"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="#194D82"/>
+
+    <ImageButton
+        android:id="@+id/hamburgerImageButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/navigation_drawer"
+        android:scaleType="centerCrop"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:src="@drawable/ic_hamburger" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/factsTextView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/poppins_light"
+        android:text=" 1. There are 1.25 million road traffic deaths\nglobally.\n
+2. Road traffic crashes are the number one cause of death among those aged 15–29 years.\n
+3. 90 percent of road traffic deaths occur in low- and middle-income countries.\n
+4. Vulnerable road users include pedestrians, cyclists, and riders of motorized two-wheelers and their passengers.\n
+5. Drinking alcohol and driving increases the risk of a crash.\n
+6. Wearing a good-quality helmet can reduce the risk of death from a road crash by 40 percent.\n
+7. Wearing a seat-belt reduces the risk of death among front-seat passengers by 40–65 percent.\n
+8. Infant seats, child seats and booster seats can reduce child deaths by 54–80 percent in the event of a crash.\n
+9. Vehicles sold in 80 percent of all countries worldwide fail to meet basic safety standard.\n
+10. Daily driving period shall not exceed 9 hours and total weekly driving time may not exceed 56 hours for safe driving."
+        android:textColor="#194D82"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+</ScrollView>

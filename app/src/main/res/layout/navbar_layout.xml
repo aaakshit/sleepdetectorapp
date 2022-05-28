@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/hamburger_about">
+
+    <TextView
+        android:id="@+id/hi_there"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/sacramento"
+        android:paddingTop="15dp"
+        android:text="Welcome !"
+        android:textAlignment="center"
+        android:textColor="#194D82"
+        android:textSize="70dp" />
+
+    <LinearLayout
+        android:layout_width="78dp"
+        android:layout_height="345dp"
+        android:layout_below="@+id/hi_there"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="285dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_light"
+            android:text="Home"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/facts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_light"
+            android:text="Facts"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_light"
+            android:text="About Us"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/map"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
